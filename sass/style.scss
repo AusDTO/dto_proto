@@ -1,0 +1,56 @@
+// CSS will be compiled in the following order:
+// ------------------------------------------------------------------------------------------------------
+
+@import "bootstrap";
+// ----- Include framework for minification.
+
+
+@import "variables";
+// ----- Variables is where reusable attributes are declared, such as colours and font cascades.
+// Widths
+// Colours
+// Padding
+// Typography
+
+
+@import "base";
+// ----- Base includes resets and basic element styling
+// Resets
+// Hyperlinks
+// Form elements
+// Font styling
+// Headings
+// Other elements
+
+
+@import "layout";
+// ----- Layout is containers and ways of joining modules together
+// Containers
+// Navigation
+// Pageslide plugin
+// Header
+// Footer
+// Aside
+
+
+@import "module";
+// ----- Modules are reusable components that can be called from multiple places
+// Buttons
+// Fieldsets
+// Simple classes
+// Side fly out
+// Important messaging
+// Process messages: success, alert, error 
+// Expand / collapse for overview pages
+// Iconography
+// Mixins
+// Search results
+
+
+@import "prototype";
+// ----- Prototype contains specific modules that would need to be refactored for production
+// Columnal plugin
+// Persona intro screen
+// Sign in box
+// Classes being tested
+

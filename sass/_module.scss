@@ -1,0 +1,388 @@
+// ----- Modules are reusable components that can be called from multiple places
+// ------------------------------------------------------------------------------------------------------
+
+
+// Buttons
+// ------------------------------------------------------------------------------------------------------
+
+.button {
+  margin: 2em 0 3em 0;
+  clear: both;
+}
+button {
+  margin: 0 0 0.5em 0;
+}
+button,
+button:link,
+button:visited,
+.button a,
+.button a:link,
+.button a:visited {
+  background: $button-bg;
+  background: -moz-linear-gradient(top,  rgba(254,187,24,1) 0%, rgba(255,143,7,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,187,24,1)), color-stop(100%,rgba(255,143,7,1)));
+  background: -webkit-linear-gradient(top,  rgba(254,187,24,1) 0%,rgba(255,143,7,1) 100%);
+  background: -o-linear-gradient(top,  rgba(254,187,24,1) 0%,rgba(255,143,7,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(254,187,24,1) 0%,rgba(255,143,7,1) 100%);
+  background: linear-gradient(to bottom,  rgba(254,187,24,1) 0%,rgba(255,143,7,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febb18', endColorstr='#ff8f07',GradientType=0 );
+  border: 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 8px 0 rgba(47,45,43,.5);
+  box-shadow: 0 0 8px 0 rgba(47,45,43,.5);
+  color: $button-color;
+  cursor: pointer;
+  letter-spacing: -1px;
+  line-height: 1;
+  padding: 0.6em 1.25em;
+  text-align: center;
+  text-decoration: none !important;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.button a:hover,
+.button a:focus,
+.button a:active,
+button:hover,
+button:focus,
+button:active {
+  background: $button-bg-hover;
+  color: $button-bg;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-box-shadow: 0 0 2px 0 rgba(47,45,43,.5);
+  box-shadow: 0 0 2px 0 rgba(47,45,43,.75);
+}
+.button-small {
+  -webkit-box-shadow: 0 0 5px 0 rgba(47,45,43,.3);
+  box-shadow: 0 0 5px 0 rgba(47,45,43,.5);
+  font-family: $font-light;
+  padding: 0.25em 1em;
+}
+table.shaded td .button-small {
+  font-size: 100%;
+  margin-top: 0.25em;
+}
+
+
+// Fieldsets
+// ------------------------------------------------------------------------------------------------------
+
+.form-container fieldset {
+  border: 0;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.form-container legend {
+  font-family: $font-bold;
+  font-size: 120%;
+  margin: 0;
+  padding: 0.5em 0 0 0;
+}
+.form-container fieldset.fieldset-block {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background-color: $bg-light-gray;
+  padding: 0.5em 1em;
+  margin-top: 0;
+}
+.form-container fieldset.fieldset-block legend.form {
+  background: transparent url("../images/ico-form.png") 0 3.75em no-repeat;
+  padding: 4em 0 8px 45px;
+}
+h4.secure {
+  background: #333 url("../images/ico-secure.png") 12px 15px no-repeat;
+  color: $fg-yellow;
+  padding: 20px 0 22px 58px;
+  font-family: $font-bold;
+  font-size: 140%;
+}
+.form-detail {
+  margin-top: 1em;
+  clear: both;
+}
+.form-detail label {
+  margin-top: 0.5em;
+}
+.form-detail label span.label-hint {
+  color: $bg-hint;
+  font-size: 90%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1em;
+}
+.form-detail input,
+.form-detail textarea {
+  display: block;
+  font-size: 100%;
+  padding: 0.75em;
+  width: 94%;
+  max-width: 25em;
+  margin: 0.25em 0 0.25em 0;
+}
+.form-detail input[type=checkbox] {
+  border: none;
+  display: inline;
+  width: auto;
+}
+.form-detail span.forgotten {
+  display: inline;
+  clear: both;
+  font-size: 90%;
+  margin: 0;
+}
+@media only screen and (min-width: $break-medium) {
+  .form-detail input,
+  .form-detail textarea {
+    width: 70%;
+  }
+  .form-detail span.forgotten {
+    line-height: 50px;
+    margin: 0 0 0 0.5em;
+  }
+}
+
+
+// Simple classes
+// ------------------------------------------------------------------------------------------------------
+
+.required {
+  font-weight: normal;
+  color: $required;
+}
+.float  {
+  float: left;
+  clear: right;
+}
+.right-align {
+  text-align: right;
+}
+
+ul.resources {
+  margin-bottom: 2em;
+}
+
+
+// Side fly out
+// ------------------------------------------------------------------------------------------------------
+
+#menu-account .required {
+  color: $fg-yellow;
+}
+#menu-account input {
+  margin-bottom: 0;
+}
+#menu-account .form-detail span.forgotten {
+  display: block;
+  font-size: 90%;
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+#menu-account .form-detail span.forgotten a {
+  color: $bg-medium-gray;
+}
+
+
+// Important messaging
+// ------------------------------------------------------------------------------------------------------
+
+/* Announcement is the message that appears above all content. */
+.announcement {
+	background-color: $message-background;
+	padding: 0.1em 0 0.15em 0;
+  margin-top: 5.75em;
+}
+@media only screen and (min-width: $break-large) {
+  .announcement {
+    margin-top: 3em;
+  }
+}
+.announcement p {
+	font-size: 90%;
+	padding: 0.5em 0;
+	margin: 0;
+}
+
+/* Basic introduction on content pages */
+.overview {
+	background-color: $bg-light-blue;
+	padding: 0.1em 1em;
+	margin: 0 0 1em 0;
+}
+.overview p {
+  font-size: 120%;
+}
+
+/* Make content stand out, such as advertising account sign in */
+.highlight {
+	background-color: $bg-yellow;
+	padding: 0.1em 1em;
+	margin: 0 0 1em 0;
+}
+.highlight h3, 
+.highlight h4 {
+  background: transparent url("../images/ico-clock.png") 0 0 no-repeat;
+  padding: 0.65em 0 0.6em 50px;	
+}
+
+
+// Process messages: success, alert, error
+// ------------------------------------------------------------------------------------------------------
+
+.success {
+	background-color: $bg-success;
+}
+.success table {
+  margin-bottom: 1em;
+}
+.success caption {
+  border-bottom: 2px solid $fg-white;
+}
+.success h2 {
+  background: transparent url("../images/ico-success.png") 0 0 no-repeat;
+  padding: 0.15em 0 0.5em 52px;
+  font-size: 180%;
+}
+
+
+
+// Expand / collapse for overview pages
+// ------------------------------------------------------------------------------------------------------
+
+#showhide h3 {
+  font-size: 110%;
+  margin: 0;
+  line-height: 1.4em;
+}
+#showhide h3 a,
+#showhide h3 a:link,
+#showhide h3 a:visited {
+  background: $bg-white url("../images/sprite-expand-collapse.png") 8px 14px no-repeat;
+  color: $fg-blue;
+  display: block;
+  padding: 0.6em 0 0.6em 2.5em;
+  margin: 0;
+  text-decoration: none;
+}
+#showhide h3 a:hover,
+#showhide h3 a:focus,
+#showhide h3 a:active { 
+  background: $bg-black url("../images/sprite-expand-collapse.png") 8px -98px no-repeat;
+  color: $fg-white;
+}
+#showhide h3.open a,
+#showhide h3.open a:link,
+#showhide h3.open a:visited { 
+  background: #0B5394 url("../images/sprite-expand-collapse.png") 8px -208px no-repeat;
+  color: $fg-white;
+}
+#showhide h3.open a:hover,
+#showhide h3.open a:focus,
+#showhide h3.open a:active { 
+  background: $bg-black url("../images/sprite-expand-collapse.png") 8px -318px no-repeat;
+  color: $fg-white;
+}
+#showhide h3 + div { 
+	padding: 0em 0em 0.5em 0em; 
+	margin-bottom: 1em;
+	border-bottom: 8px solid $bg-light-blue;
+}
+@media only screen and (min-width: $break-medium) {
+	#showhide h3 + div { 
+		padding: 0em 2em 0.5em 2.75em; 
+	}
+}
+#showhide {
+	margin-bottom: 1.5em;
+}
+/* Pre hide sections with JavaScript on */
+#showhide h3+div {
+  display: none;
+}
+#showhide li {
+	padding: 0.4em 0;
+}
+
+
+// Iconography
+// ------------------------------------------------------------------------------------------------------
+
+/* inline help icon for more info links */
+.inline-help {
+  background: transparent url("../images/ico-question-small.png") 0 2px no-repeat;
+  padding-left: 26px;
+  margin-left: 0.35em;
+}
+
+/* Speech icon */
+.ico-speech-small {
+  background: transparent url("../images/ico-speech-small.png") 0 4px no-repeat;
+  padding-left: 34px;
+}
+
+/* Aside heading icons */
+h2.ico-list,
+h2.ico-exclamation,
+h2.ico-star {
+  font-size: 130%;
+  margin: 0 0 0.5em 0;
+}
+.ico-list {
+  background: transparent url("../images/ico-list.png") 0 5px no-repeat;
+  padding: 0.6em 0 0.6em 52px;
+}
+.ico-exclamation {
+  background: transparent url("../images/ico-exclamation.png") 0 5px no-repeat;
+  padding: 0.6em 0 0.6em 52px;
+}
+.ico-star {
+  background: transparent url("../images/ico-star.png") 0 5px no-repeat;
+  padding: 0.6em 0 0.6em 52px;
+}
+.ico-account {
+  background: transparent url("../images/ico-account.png") 0 5px no-repeat;
+  padding: 0.6em 0 0.6em 52px;
+}
+
+
+// Search results
+// ------------------------------------------------------------------------------------------------------
+
+.search-result {
+  margin: 0 0 2em 0;
+}
+.search-result h2 {
+  background: transparent url("../images/ico-external.png") 0 50% no-repeat;
+  padding: 0.25em 0 0.5em 28px;
+  font-size: 110%;
+  margin: 0;
+}
+.search-result .source {
+  color: $dark-gray;
+  font-size: 90%;
+  margin: 0;
+  padding: 0;
+}
+.search-result .description {
+  margin: 0.25em 0 1em 0;
+  font-size: 90%;
+}
+
+
+// Mixins
+// ------------------------------------------------------------------------------------------------------
+
+@mixin transition {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}

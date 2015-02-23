@@ -1,0 +1,210 @@
+// ----- Base includes resets and basic element styling
+// ------------------------------------------------------------------------------------------------------
+
+
+// Resets
+// ------------------------------------------------------------------------------------------------------
+
+body {
+  background: $body-bg;
+  margin: 0;
+  padding: 0;
+  color: $font-color;
+  font-size: $font-size;
+  font-family: $font-light;
+}
+
+
+// Hyperlinks
+// ------------------------------------------------------------------------------------------------------
+
+a,
+a:link {
+  background-color: $bg-white;
+  color: $fg-blue;
+  text-decoration: underline;
+}
+a:visited {
+  color: $fg-blue;
+}
+a:hover,
+a:focus,
+a:active {
+  background-color: $bg-black;
+  color: $fg-white;
+  outline: none;
+  color: white;
+  text-decoration: none;
+}
+
+
+// Form elements
+// ------------------------------------------------------------------------------------------------------
+
+input[type=text],
+textarea {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #666666;
+  font-size: 12px;
+}
+
+input[type=text]:hover,
+input[type=text]:focus,
+input[type=text]:active,
+textarea:hover,
+textarea:focus,
+textarea:active,
+select:hover,
+select:focus,
+select:active {
+  background-color: $bg-field;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+input, select, textarea {
+  border: 1px solid #BBBBBB !important;
+  line-height: 1;
+  padding: 0.5em 0.3em;
+}
+select {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0.35em 0.3em;
+}
+textarea { 
+  min-height: 10em;
+}
+button, input {
+  line-height: normal;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+// Font styling
+// ------------------------------------------------------------------------------------------------------
+
+/* Define font embedding */
+@font-face {
+    font-family: 'opensans-light';
+    src: url('../fonts/OpenSans-Light.eot');
+    src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light.woff') format('woff'),
+         url('../fonts/OpenSans-Light.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light.svg#open_sanscondensed_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans-bold';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold.woff') format('woff'),
+         url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold.svg#open_sanscondensed_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// Headings
+// ------------------------------------------------------------------------------------------------------
+
+h1, h2, h3, h4 {
+  line-height: 1.4em;
+  margin: 1em 0 0.5em 0;
+  clear: both; 
+  padding: 0;
+}
+h1 {
+  font-size: 260%;
+  font-family: $font-bold;
+  letter-spacing: -1px;
+  padding: 0 0 0.2em 0;
+  margin: 0.5em 0 0.5em 0;
+}
+header h1 {
+  color: white;
+  line-height: 1em;
+  font-size: 130%;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0.6em 0 0.75em 0;
+}
+header h1 a,
+header h1 a:link,
+header h1 a:visited {
+  background-color: transparent;
+  border-bottom: 1px solid $link-feature-colour;
+  color: $fg-white;
+  text-decoration: none;
+}
+header h1 a:hover,
+header h1 a:focus,
+header h1 a:active {
+  background-color: transparent;
+  border-bottom: 1px solid $link-feature-colour;
+  color: $link-feature-colour;
+}
+
+@media only screen and (min-width: $break-large) {
+  h1 {
+    padding: 0.2em 0 0.2em 0;
+  }
+  header h1 {
+    float: left;
+  }
+}
+h2 {
+  font-size: 150%;
+  font-family: $font-light;
+  line-height: 1em;
+  margin: 1em 0 0.5em 0;
+  text-transform: none;
+  font-weight: normal;
+}
+h3 {
+  color: #666;
+  font-size: 130%;
+  margin: 1em 0 0.5em 0;
+}
+h4 {
+  color: black;
+  font-size: 110%;
+  margin: 1.5em 0 0 0;
+}
+
+
+// Other elements
+// ------------------------------------------------------------------------------------------------------
+
+p {
+  line-height: $line-height;
+  margin: 1.25em 0;
+}
+li {
+  padding: 0.15em 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1em 0 3em 0;
+  width: 100%;
+}
+caption {
+  border-bottom: 2px solid #dddddd;
+  color: $font-color;
+  font-size: 130%;
+  font-family: $font-bold;
+  padding-bottom: 1em;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+th, td {
+  font-family: $font-light;
+  text-align: left;
+  padding: 0.5em 0;
+  vertical-align: middle;
+  width: 15%;
+}
+

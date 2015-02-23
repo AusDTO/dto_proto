@@ -1,0 +1,67 @@
+// ----- Variables is where reusable attributes are declared, such as colours and font cascades.
+// ------------------------------------------------------------------------------------------------------
+/* Notes: naming conventions need to be made semantic, eg: removing colours from variale names */
+
+
+// Widths
+// ------------------------------------------------------------------------------------------------------
+
+$content-max-width: 1400px;
+
+
+// breakpoints
+$break-small: 480px;
+$break-medium: 560px;
+$break-large: 768px;
+$break-wide: 1200px;
+
+
+// Colours
+// ------------------------------------------------------------------------------------------------------
+
+$bg-field: #ffffcc;
+$bg-light-blue: #CFE2F3;
+$message-background: #ffc97c;
+$body-bg: white;
+$font-color: black;
+$font-color-lighter: #666666;
+$nav-bg: #222222;
+$field-bg: rgba(255, 255, 255, .6);
+$bg-light-gray: #eee;
+$bg-medium-gray: #ccc;
+$dark-gray: #666;
+$bg-footer: #dcdad3;
+$bg-success: #d3f1c0;
+$bg-hint: #444;
+$required: #cc3300;
+$fg-white: white;
+$fg-yellow: #ffca4c;
+$bg-yellow: #ffe99b;
+$fg-blue: #003366;
+$bg-black: black;
+$bg-white: transparent;
+$link-feature-colour: #ffb000;
+$heading-color: #d3cec1;
+$button-bg: #febb18;
+$button-color: #000;
+$button-bg-hover: #000000;
+$button-color-hover: #ffffff;
+$footer-color: #999999;
+$footer-bg: #000000;
+
+
+// Padding
+// ------------------------------------------------------------------------------------------------------
+
+$site-padding: 3%;
+
+
+// Typography
+// ------------------------------------------------------------------------------------------------------
+
+$font-size: 1.75em;
+$smaller: 90%;
+$font-light: opensans-light, helvetica, arial, sans-serif;
+$font-italic: opensans-lightitalic, helvetica, arial, sans-serif;
+$font-bold: opensans-bold, helvetica, arial, sans-serif;
+$line-height: 1.4;

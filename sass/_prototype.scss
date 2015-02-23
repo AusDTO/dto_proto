@@ -1,0 +1,105 @@
+// ----- Prototype contains specific modules that would need to be refactored for production
+
+/* Notes about the wireframe in the page */
+.wireframe-note {
+	padding: 0.5em;
+	background-color: $message-background;
+}
+
+
+// Persona intro screen
+// ------------------------------------------------------------------------------------------------------
+
+/* Prototype index page */
+h1.no-header {
+	margin-top: 0;
+}
+.showcase h1 {
+  margin: 2em 0 0.5em 0;
+}
+.intro-box {
+	padding: 0 2em 1em 2em;
+	background-color: $bg-light-gray;
+	border: 1px solid $bg-medium-gray;
+	margin: 3em 0;
+	-webkit-box-shadow: 0 0 12px rgba(0,0,0,.3);
+	box-shadow: 0 0 12px rgba(0,0,0,.3);
+}
+.intro-box img {
+	float: left;
+	margin: 2em 2em 5em 0;
+	width: 207px;
+}
+.intro-box h2 {
+	clear: none;
+	font-size: 200%;
+	margin: 1em 0 1.25em 0;
+}
+.intro-box h3 {
+	clear: none;
+  font-family: $font-bold;
+	font-size: 160%;
+}
+
+
+/* Centering screenshots */
+.text-center {
+	text-align: center;
+}
+.pad-image {
+	padding: 2em;
+}
+
+
+// Sign in box
+// ------------------------------------------------------------------------------------------------------
+
+#mygov-login {
+	position: fixed;
+	top: 30%;
+	left: 10%;
+	background-color: $bg-light-gray;
+	padding: 2em;
+	width: 80%;
+	z-index: 1000;
+}
+.overlay-on {
+	width: 100%; 
+	overflow: hidden; 
+	background-color: rgba(0,0,0,.6);
+	position: absolute; 
+	background-size: cover;
+	top: 0; 
+	left: 0;
+	z-index: 1000;
+}
+
+
+// Classes being tested
+// ------------------------------------------------------------------------------------------------------
+
+table.shaded th {
+  background-color: $bg-light-gray;
+  padding: 0.5em;
+}
+table.shaded td {
+  font-size: 90%; 
+  padding: 0.3em 0.5em 0.5em 0.5em;
+  border-bottom: 1px solid $bg-light-gray;
+}
+table.shaded td img {
+  vertical-align: bottom;
+}
+table.shaded td ul li {
+  padding: 0 !important;
+}
+
+.table-expand {
+  background: $bg-white url("../images/sprite-expand-collapse.png") 5px 5px no-repeat;
+  color: $fg-blue;
+  display: block;
+  padding: 0.3em 0 0.3em 40px;
+}
+.table-collapse {
+  background: $bg-white url("../images/sprite-expand-collapse.png") 5px -216px no-repeat;
+}

@@ -1,0 +1,2 @@
+<h2>Conceptual prototype for Digital Transformation Office</h2>
+<p>The purpose of these prototypes is to visualise high level design options for the information layer. This is a way to make abstract concepts more real and understable, and also to prompt discussion and shake out issues and alternative ideas. These are first drafts and will be continually iterated as more people provide feedback. Detailed content and functionality is for illustrative purposes and may not be accurate or comprehensive.</p>

@@ -48,6 +48,9 @@ textarea {
   color: #666666;
   font-size: 12px;
 }
+input[type=radio] {
+  float: left;
+}
 
 input[type=text]:hover,
 input[type=text]:focus,

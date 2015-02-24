@@ -114,13 +114,13 @@ button, input {
 // ------------------------------------------------------------------------------------------------------
 
 h1, h2, h3, h4 {
-  line-height: 1.4em;
+  line-height: 1.3em;
   margin: 1em 0 0.5em 0;
   clear: both; 
   padding: 0;
 }
 h1 {
-  font-size: 260%;
+  font-size: 200%;
   font-family: $font-bold;
   letter-spacing: -1px;
   padding: 0 0 0.2em 0;
@@ -152,6 +152,7 @@ header h1 a:active {
 
 @media only screen and (min-width: $break-large) {
   h1 {
+    font-size: 260%;
     padding: 0.2em 0 0.2em 0;
   }
   header h1 {

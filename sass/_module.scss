@@ -313,12 +313,23 @@ ul.resources {
 .showhide {
 	margin-bottom: 1.5em;
 }
+.well .showhide {
+  margin-bottom: 0.5em;
+}
+.well .showhide h3 + div { 
+  padding: 0; 
+  margin-bottom: 0.5em;
+  border-bottom: none;
+}
+.well .showhide ul {
+  margin-top: 1em;
+}
 /* Pre hide sections with JavaScript on */
 .showhide h3+div {
   display: none;
 }
 .showhide li {
-	padding: 0.4em 0;
+	padding: 0.3em 0;
 }
 
 

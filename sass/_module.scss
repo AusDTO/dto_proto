@@ -267,14 +267,14 @@ ul.resources {
 // Expand / collapse for overview pages
 // ------------------------------------------------------------------------------------------------------
 
-#showhide h3 {
+.showhide h3 {
   font-size: 110%;
   margin: 0;
   line-height: 1.4em;
 }
-#showhide h3 a,
-#showhide h3 a:link,
-#showhide h3 a:visited {
+.showhide h3 a,
+.showhide h3 a:link,
+.showhide h3 a:visited {
   background: $bg-white url("../images/sprite-expand-collapse.png") 8px 14px no-repeat;
   color: $fg-blue;
   display: block;
@@ -282,43 +282,54 @@ ul.resources {
   margin: 0;
   text-decoration: none;
 }
-#showhide h3 a:hover,
-#showhide h3 a:focus,
-#showhide h3 a:active { 
+.showhide h3 a:hover,
+.showhide h3 a:focus,
+.showhide h3 a:active { 
   background: $bg-black url("../images/sprite-expand-collapse.png") 8px -98px no-repeat;
   color: $fg-white;
 }
-#showhide h3.open a,
-#showhide h3.open a:link,
-#showhide h3.open a:visited { 
+.showhide h3.open a,
+.showhide h3.open a:link,
+.showhide h3.open a:visited { 
   background: #0B5394 url("../images/sprite-expand-collapse.png") 8px -208px no-repeat;
   color: $fg-white;
 }
-#showhide h3.open a:hover,
-#showhide h3.open a:focus,
-#showhide h3.open a:active { 
+.showhide h3.open a:hover,
+.showhide h3.open a:focus,
+.showhide h3.open a:active { 
   background: $bg-black url("../images/sprite-expand-collapse.png") 8px -318px no-repeat;
   color: $fg-white;
 }
-#showhide h3 + div { 
+.showhide h3 + div { 
 	padding: 0em 0em 0.5em 0em; 
 	margin-bottom: 1em;
 	border-bottom: 8px solid $bg-light-blue;
 }
 @media only screen and (min-width: $break-medium) {
-	#showhide h3 + div { 
+	.showhide h3 + div { 
 		padding: 0em 2em 0.5em 2.75em; 
 	}
 }
-#showhide {
+.showhide {
 	margin-bottom: 1.5em;
 }
+.well .showhide {
+  margin-bottom: 0.5em;
+}
+.well .showhide h3 + div { 
+  padding: 0; 
+  margin-bottom: 0.5em;
+  border-bottom: none;
+}
+.well .showhide ul {
+  margin-top: 1em;
+}
 /* Pre hide sections with JavaScript on */
-#showhide h3+div {
+.showhide h3+div {
   display: none;
 }
-#showhide li {
-	padding: 0.4em 0;
+.showhide li {
+	padding: 0.3em 0;
 }
 
 

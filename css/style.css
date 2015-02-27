@@ -6592,17 +6592,17 @@ th, td {
 .logo {
   margin: 0.6em 0.5em 0 0;
   width: 100%;
-  max-width: 148px;
+  max-width: 115px;
   float: left; }
 
 .logo-individuals {
-  max-width: 325px; }
+  max-width: 292px; }
 
 .logo-business {
-  max-width: 297px; }
+  max-width: 264px; }
 
 .logo-human-services {
-  max-width: 403px; }
+  max-width: 370px; }
 
 /* Top bar behind nav toggle */
 .container-header-background {

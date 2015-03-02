@@ -10,8 +10,33 @@ body {
   margin: 0;
   padding: 0;
   color: $font-color;
-  font-size: $font-size;
+  font-size: $font-size-default;
   font-family: $font-light;
+}
+
+
+// Responsive font sizing
+// ------------------------------------------------------------------------------------------------------
+
+@media only screen and (min-width: $break-small) {
+  body {
+    font-size: $font-size-small;
+  }
+}
+@media only screen and (min-width: $break-medium) {
+  body {
+    font-size: $font-size-medium;
+  }
+}
+@media only screen and (min-width: $break-large) {
+  body {
+    font-size: $font-size-large;
+  }
+}
+@media only screen and (min-width: $break-wide) {
+  body {
+    font-size: $font-size-wide;
+  }
 }
 
 

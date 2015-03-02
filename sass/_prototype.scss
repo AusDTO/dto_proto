@@ -103,3 +103,8 @@ table.shaded td ul li {
 .table-collapse {
   background: $bg-white url("../images/sprite-expand-collapse.png") 5px -216px no-repeat;
 }
+
+/* Including screenshots of 3rd party web sites that centre and overflow */
+.img-overflow {
+  overflow-x: hidden;
+}

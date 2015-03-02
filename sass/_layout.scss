@@ -20,17 +20,8 @@
 .logo {
     margin: 0.6em 0.5em 0 0;
     width: 100%;
-    max-width: 115px;
+    max-width: 252px;
     float: left;
-}
-.logo-individuals {
-    max-width: 292px;
-}
-.logo-business {
-    max-width: 264px;
-}
-.logo-human-services {
-    max-width: 370px;
 }
 
 
@@ -43,8 +34,25 @@
     margin: 0;
     padding: 0;
     min-height: 3em;
+    border-bottom: 5px solid $nav-bg;
+}
+.header-australia .logo {
+    max-width: 292px;
 }
 
+.header-business {
+    border-bottom: 5px solid $bg-business;
+}
+.header-business .logo {
+    max-width: 290px;
+}
+
+.header-human-services .logo {
+    max-width: 386px;
+}
+.header-human-services {
+    border-bottom: 5px solid $bg-human-services;
+}
 
 // Pageslide plugin
 // ------------------------------------------------------------------------------------------------------

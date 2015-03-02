@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DTO user pathway prototypes</title>
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container-header-background">
+        <div class="container">
+        </div><!-- container -->
+      </div><!-- container-header-background -->
+    </header>
+
+    <div class="announcement">
+      <div class="container">
+        <p>(<a href="../index.html">Index</a>)&nbsp;&nbsp;Wireframe notes: For the prototype we are skipping to the screen providing options for saving results. Click Next.</p>
+      </div><!-- container -->
+    </div><!-- announcement -->
+
+    <div class="container">
+      <p><a data-toggle="modal" data-target="#myModal" href="#"><img class="img-overflow" src="../images/ablis-3.png" alt="External site" /></a></p>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title secure" id="myModalLabel">Secure login</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-container">
+                <fieldset>
+                  <p>Log in to your government account.</p>
+                  <div class="form-detail">
+                    <label for="username">Username <span class="required">(required)</span></label><br />
+                    <input class="float" type="text" value="dbraithwaite" id="username" /> <span class="forgotten"><a href="">Forgotten username?</a></span>
+                  </div>
+                  <div class="form-detail">
+                    <label for="password">Password <span class="required">(required)</span></label><br />
+                    <input class="float" type="text" value="********" id="password" /> <span class="forgotten"><a href="">Forgotten password?</a></span>
+                  </div>
+                  <p style="clear: both; margin-bottom: 0"><button onClick="location.href='expanding-your-business-c06.html'">Submit</button> &nbsp;<a href="">Sign up</a></p>
+                </fieldset>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- modal -->
+    </div><!-- container -->
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.pageslide.js"></script>
+    <script src="../js/jquery.collapse.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("li.toggle-account a, .impatient").pageslide();
+            $("li.toggle-nav a, .impatient").pageslide();
+        });
+    </script>
+    <script>
+      new jQueryCollapse($(".showhide"), {
+        open: function() {
+          this.slideDown(150);
+        },
+        close: function() {
+          this.slideUp(150);
+        }
+      });
+    </script>
+    </body>
+</html>

@@ -54,6 +54,21 @@
     border-bottom: 5px solid $bg-human-services;
 }
 
+
+// Page navigation
+// ------------------------------------------------------------------------------------------------------
+
+.page-nav ul {
+    margin: 0 0 0 0.5em;
+    padding: 0;    
+}
+.page-nav li {
+    background: transparent url(../images/ico-down.png) 0 50% no-repeat;
+    padding: 0.3em 0 0.3em 37px;
+    list-style-type: none;
+}
+
+
 // Pageslide plugin
 // ------------------------------------------------------------------------------------------------------
 

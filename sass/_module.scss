@@ -146,7 +146,7 @@ h4.secure {
 .form-detail span.forgotten {
   display: inline;
   clear: both;
-  font-size: 90%;
+  font-size: $smallest;
   margin: 0;
 }
 @media only screen and (min-width: $break-medium) {
@@ -155,7 +155,6 @@ h4.secure {
     width: 70%;
   }
   .form-detail span.forgotten {
-    line-height: 50px;
     margin: 0 0 0 0.5em;
   }
 }
@@ -178,6 +177,9 @@ h4.secure {
 
 ul.resources {
   margin-bottom: 2em;
+}
+img.responsive {
+  width: 100%;
 }
 
 

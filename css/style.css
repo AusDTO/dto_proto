@@ -6602,6 +6602,24 @@ th, td {
   margin: 0 auto;
   padding: 0 2%; }
 
+/* Hoe page well containers */
+body.home .well {
+  padding: 0.25em 1em; }
+
+body.home .well h2 {
+  font-size: 120%; }
+
+body.home .well p {
+  font-size: 90%; }
+
+body.home .well h2 a {
+  text-decoration: none;
+  border-bottom: 1px solid #ccc; }
+
+body.home .feature {
+  background: #f0f0ea url(../images/bg-gears.png) no-repeat 0 100% !important;
+  background-size: contain !important; }
+
 .logo {
   margin: 0.6em 0.5em 0 0;
   width: 100%;
@@ -6955,7 +6973,7 @@ h4.secure {
 .form-detail span.forgotten {
   display: inline;
   clear: both;
-  font-size: 90%;
+  font-size: 80%;
   margin: 0; }
 
 @media only screen and (min-width: 560px) {
@@ -6964,7 +6982,6 @@ h4.secure {
     width: 70%; }
 
   .form-detail span.forgotten {
-    line-height: 50px;
     margin: 0 0 0 0.5em; } }
 .required {
   font-weight: normal;
@@ -6979,6 +6996,9 @@ h4.secure {
 
 ul.resources {
   margin-bottom: 2em; }
+
+img.responsive {
+  width: 100%; }
 
 #menu-account .required {
   color: #ffca4c; }

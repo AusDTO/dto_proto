@@ -21,7 +21,13 @@ body.home .well {
 body.home .well h2 {
     font-size: 120%;
 }
+body.home .well h3 {
+    font-size: 110%;
+}
 body.home .well p {
+    font-size: $smaller;
+}
+body.home .collapse li {
     font-size: $smaller;
 }
 body.home .well h2 a {

@@ -32,6 +32,10 @@ body.home .feature {
   background: $bg-well-feature url(../images/bg-gears.png) no-repeat 0 100% !important;
   background-size: contain !important;
 }
+body.home .glyphicon {
+    top: 3px;
+    margin-right: 0.2em;
+}
 
 
 // Logos

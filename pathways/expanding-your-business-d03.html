@@ -8,7 +8,7 @@
     <link href="../css/style.css" rel="stylesheet">
   </head>
 
-  <body class="home">
+  <body>
 
 	  <header>
       <div class="container-header-background">
@@ -25,61 +25,78 @@
 
     <div class="announcement">
       <div class="container">
-      	<p>(<a href="../index.html">Index</a>)&nbsp;&nbsp;Wireframe notes: Open <strong>services</strong> then select "Search for licence requirements".</p>
+      	<p>(<a href="../index.html">Index</a>)&nbsp;&nbsp;Wireframe notes: David has entered data into the fields, click <strong>Go</strong>.</p>
       </div><!-- container -->
     </div><!-- announcement -->
 
   	<div class="container">
-			<h1>Account dashboard</h1>
-
+			<h1>Search for licence requirements</h1>
 			<div class="row">
+				
 				<div class="col-md-8">
-				  <div class="well overview">
-					  <h2>Hi, David</h2>
-					  <p>There have been a few changes since you last signed in on 24th April 2015. You have 2 new notifications and 1 pending transaction.</p>
-				  </div><!-- well -->
-				</div><!-- col -->
-				<div class="col-md-4">
-					<div class="well">
-						<h2><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <a href="">Settings</a></h2>
-					  <p>Update business details, profile settings and business.gov.au viewing preferences.</p>
-					</div><!-- well -->
-				</div><!-- col -->
-			</div><!-- row -->
+			    <section>
+					  <div class="overview">
+							<p>The Australian Business Licence and Information Service (<strong>ABLIS</strong>) provides businesses with a way to discover regulatory and non-regulatory information to simplify their interactions with government.</p>
+						</div><!-- overview -->
+						<div class="form-container">
+							<fieldset>
+								<legend class="form">Search ABLIS</legend>
+								<div class="form-detail">
+									<div class="form-detail radio-group">
+										<p>Are you moving or expanding to an additional location? <span class="required">(required)</span></p>
+										<input type="radio" name="count" id="new" value="new">&nbsp;<label for="new">No, I'm enquiring about a new business</label><br />
+										<input type="radio" name="count" id="moving" value="moving">&nbsp;<label for="moving">Yes, I want to move my existing business</label><br />
+										<input type="radio" name="count" id="additional" value="additional" checked="checked">&nbsp;<label for="additional">Yes, I'm moving to an additional premises</label><br />
+									</div>
+								</div>						
+								<div class="form-detail">
+									<label for="existing">Existing business location <span class="label-hint">(if you are moving or expanding)</span></label><br />
+									<input type="text" value="Gilmore 2905, Australian Capital Territory" id="existing" />
+								</div>
+								<div class="form-detail">
+									<label for="new">New business location <span class="required">(required)</span></label><br />
+									<input type="text" value="Queanbeyan 2620, Palerang Council" id="new" />
+								</div>
+								<div class="form-detail">
+									<label for="new">Business type <span class="required">(required)</span> <span class="label-hint">(example: cafe, plumbing, news agent)</span></label><br />
+									<input type="text" value="restaurant" id="new" />
+								</div>
+								<div class="form-detail">
+									<p>What areas are you interested in?</p>
+									<input checked id="licensing" type="checkbox" name="area">&nbsp;<label for="licensing">Licensing</label><br />
+									<input id="regs" type="checkbox" name="area">&nbsp;<label for="regs">Regulations</label><br />
+									<input id="advice" type="checkbox" name="area">&nbsp;<label for="advice">Advice</label><br />
+									<input id="grants" type="checkbox" name="area">&nbsp;<label for="grants">Grants</label><br />
+									<input id="approvals" type="checkbox" name="area">&nbsp;<label for="approvals">Building and planning approvals</label><br />
+								</div>
+								<p style="clear: both; margin-bottom: 0"><button onClick="location.href='expanding-your-business-a04.html'">Go</button></p>
+							</fieldset>
+						</div><!-- form-container -->
+			    </section>
+			   </div><!-- col -->
 
-			<div class="row">
-				<div class="col-md-4">
-				  <div class="well">
-					  <h2><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="">Inbox <span class="badge">2</span></a></h2>
-					  <p>Receive important messages such as changes to regulations that may affect your business.</p>
-				  </div><!-- well -->
-				</div><!-- col -->
-				<div class="col-md-4">
-				  <div class="well">
-					  <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> <a href="">Transactions <span class="badge">1</span></a></h2>
-					  <p>Add and monitor the status of transactions related to your business.</p>
-				  </div><!-- well -->
-				</div><!-- col -->
-				<div class="col-md-4">
-				  <div class="well">
-					  <h2><span class="glyphicon glyphicon-th" aria-hidden="true"></span> <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" href="#">Services</a></h2>
-					  <p>Add or manage 3rd party services for starting or growing your business.</p>
-					  <div class="collapse" id="collapseExample">
-					    <h3>Available services</h3>
-					    <ul>
-					      <li><a href="expanding-your-business-d03.html">Search for licence requirements</a></li>
-					      <li><a href="">Check availability of a business name</a></li> 
-					      <li><a href="">Trade Mark check</a></li> 
-					      <li><a href="">Search domain names</a></li> 
-					      <li><a href="">Link an AUSKey to my account</a></li> 
-					      <li><a href="">Link or update my ABN details</a></li> 
-					      <li><a href="">Update my NBN details</a></li> 
-					    </ul>
-						</div><!-- collapse -->
-				  </div><!-- well -->
-				</div><!-- col -->
-			</div><!-- row -->
+			   <div class="col-md-4">
+			   	<aside>
+						<h2 class="ico-list">Related information</h2>
+						<ul>
+							<li><a href="">These links can be</a></li>
+							<li><a href="">anything from third party</a></li>
+							<li><a href="">apps and calculators to</a></li>
+							<li><a href="">related content articles</a></li>
+						</ul>
+						<h2 class="ico-exclamation">Did you mean?</h2>
+						<ul>
+							<li><a href="">These links try to capture</a></li>
+							<li><a href="">other query pathways</a></li>
+							<li><a href="">with similar subject</a></li>
+							<li><a href="">but dfferent context</a></li>
+						</ul>
+						<h2 class="ico-star">Rate our page</h2>
+						<img src="../images/stars.png" alt="Stars" />
+			   	</aside>
+			   </div><!-- col -->
 
+			 </div><!-- row -->
 		</div><!-- container -->
 
     <footer>

@@ -104,7 +104,22 @@ table.shaded td ul li {
   background: $bg-white url("../images/sprite-expand-collapse.png") 5px -216px no-repeat;
 }
 
+table.decision-tool tr th, table.decision-tool tr td {
+	text-align: center;
+}
+table.decision-tool tr th.left, table.decision-tool tr td.left {
+	text-align: left;
+}
+
 /* Including screenshots of 3rd party web sites that centre and overflow */
 .img-overflow {
   overflow-x: hidden;
+}
+
+a.external:after {
+	content: "";
+	display: inline-block;
+	background: url(../images/ico-external-small.png) no-repeat;
+	width: 16px;
+	height: 16px;
 }

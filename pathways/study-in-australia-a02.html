@@ -17,7 +17,7 @@
 				  <ul class="persistent-controls">
 				  	<li class="toggle-search"><a href="#menu-search">Search</a></li>
 				  	<li class="toggle-nav"><a href="#menu-nav">Menu</a></li>
-				  	<li class="toggle-account toggle-authenticated"><a href="#menu-account">XXX</a></li>
+				  	<li class="toggle-account"><a href="#menu-account">Sign in</a></li>
 				  </ul>
 	    	</div><!-- container -->
     	</div><!-- container-header-background -->
@@ -25,25 +25,50 @@
 
     <div class="announcement">
       <div class="container">
-      	<p>(<a href="../index.html">Index</a>)&nbsp;&nbsp;Wireframe notes: XXX.</p>
+      	<p>(<a href="../index.html">Index</a>)&nbsp;&nbsp;Wireframe notes: Open Find an institution and a course and click <strong>Study costs</strong>.</p>
       </div><!-- container -->
     </div><!-- announcement -->
 
   	<div class="container">
-			<h1>H1</h1>
+			<h1>Study in Australia</h1>
 			<div class="row">
 				
 				<div class="col-md-8">
 			    <section>
 					  <div class="overview">
-							<p>XXX</p>
+							<p>The Australian Government has a range of services to help overseas students who wish to study in Australia. We can help you understand the Australian education system, choose the right course and institution, find the right visa, and learn about additional entry requirements.</p>
+							<p>To apply for a student visa to study in Australia, you must be enrolled in an institution and in a course that is registered on the Commonwealth Register of Institutions and Courses for Overseas Students (CRICOS).</p>
 						</div><!-- overview -->
 						<h2>On this page:</h2>
 						<div class="showhide">
-							<h3>Employing more staff</h3>
-							<div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales eget lacus ut sollicitudin. Cras purus libero, molestie vitae varius eu, sollicitudin non sapien. Cras mi ex, tincidunt quis mollis eget, luctus quis lorem. Aenean luctus at mauris id cursus. Donec a eleifend mauris. Sed tincidunt blandit elit. Phasellus a lobortis augue. Integer blandit iaculis pharetra.</p>
-							</div>
+							<h3>Australia's education system</h3>
+							<ul>
+							  <li><a href="">Primary</a></li>
+							  <li><a href="">Secondary</a></li>
+							  <li><a href="">Tertiary</a></li>
+							 </ul>
+							<h3>How to apply to study in Australia</h3>
+							<ul>
+							  <li><a href="">8 steps</a></li>
+							</ul>
+							<h3>Find an institution and a course</h3>
+							<ul>
+							  <li><a href="study-in-australia-a03.html#study">Study costs</a></li>
+							  <li><a href="study-in-australia-a03.html#scholarships">Scholarship</a></li>
+							</ul>
+							<h3>Apply for a course</h3>
+							<ul>
+							  <li><a href="">Academic requirements</a></li>
+							  <li><a href="">English language requirements</a></li>
+							</ul>
+							<h3>Apply for a visa</h3>
+							<ul>
+							  <li><a href="">Eligibility</a></li>
+							  <li><a href="">Evidence of funds to support your study</a></li>
+							  <li><a href="">Overseas student health cover</a></li>
+							  <li><a href="">What can I do under my visa</a></li>
+							  <li><a href="">You have your confirmation of enrolment</a></li>
+							</ul>
 						</div><!-- showhide -->
 			    </section>
 			   </div><!-- col -->
@@ -112,38 +137,46 @@
     </footer>
 
     <section>
-	    <div id="menu-account">
-	      <h2>David Braithwaite</h2>
-	      <ul>
-	        <li><a href="">Choose what I share</a></li>
-	        <li><a href="">Update my details</a></li>
-	        <li><a href="">Link a service</a></li>
-	        <li><a href="">Sign out</a></li>
-	      </ul>
-	    </div><!-- menu-account -->
-	    <div id="menu-nav">
-	      <h2>Menu</h2>
-	      <ul>
-	        <li><a href="">Help</a></li>
-	        <li class="toggle-account"><a href="#menu-account">David Braithwaite</a></li>
-	      </ul>
-	      <h2>Other services</h2>
-	      <p><label for="sort">Sort by:</label>
-	      <select>
-	        <option selected="selected">Relevance</option>
-	        <option>A to Z</option>
-	        <option>Agencies only</option>
-	      </select>
-	      <ul>
-	        <li><a href="">Employment</a></li>
-	        <li><a href="">Education</a></li>
-	        <li><a href="">Medicare</a></li>
-	        <li><a href="">Centerlink</a></li>
-	        <li><a href="">Tax Office</a></li>
-	        <li><a href="">Health</a></li>
-	        <li><a href="">Show all 18...</a></li>
-	      </ul> 
-	    </div><!-- menu-nav -->
+			<div id="menu-account">
+				<h2 class="secure">Secure login</h2>
+				<div class="form-container">
+					<fieldset>
+					<div class="form-detail">
+					<label for="username">Username <span class="required">(required)</span></label><br />
+					<input class="float" type="text" value="" id="username" /> <span class="forgotten"><a href="">Forgotten username?</a></span>
+					</div>
+					<div class="form-detail">
+					<label for="password">Password <span class="required">(required)</span></label><br />
+					<input class="float" type="text" value="" id="password" /> <span class="forgotten"><a href="">Forgotten password?</a></span>
+					</div>
+					<p style="clear: both; margin-bottom: 0"><button>Sign in</button> &nbsp;<a href=""><strong>Or sign up</strong></a></p>
+					</fieldset>
+				</div>
+			  <p class="ico-speech-small"><a href="">Why sign up?</a></p>
+			</div><!-- menu-account -->
+			<div id="menu-nav">
+			  <h2>Menu</h2>
+			  <ul>
+			    <li><a href="">Help</a></li>
+			    <li><a href="">Personalise my experience</a></li>
+			  </ul>
+			  <h2>Other services</h2>
+			  <p><label for="sort">Sort by:</label>
+			  <select>
+			  	<option selected="selected">Relevance</option>
+			  	<option>A to Z</option>
+			  	<option>Agencies only</option>
+			  </select>
+			  <ul>
+			    <li><a href="">This could be</a></li>
+			    <li><a href="">A list of services</a></li>
+			    <li><a href="">Or agencies</a></li>
+			    <li><a href="">Or whatever else</a></li>
+			    <li><a href="">Makes sense for</a></li>
+			    <li><a href="">High profile IA exposure</a></li>
+			    <li><a href="">Show all 18...</a></li>
+			  </ul>	
+			</div><!-- menu-nav -->    	
     </section>
 
     <script src="../js/jquery.min.js"></script>

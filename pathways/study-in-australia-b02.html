@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DTO user pathway prototypes</title>
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container-header-background">
+        <div class="container">
+        </div><!-- container -->
+      </div><!-- container-header-background -->
+    </header>
+
+    <div class="announcement">
+      <div class="container">
+        <p>(<a href="../index.html">Index</a>)&nbsp;&nbsp;Wireframe notes: Click Start an online student visa application.</p>
+      </div><!-- container -->
+    </div><!-- announcement -->
+
+    <div class="container">
+      <p><a href="study-in-australia-b03.html"><img class="img-overflow" src="../images/sydney-uni.png" alt="External site" /></a></p>
+    </div><!-- container -->
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.pageslide.js"></script>
+    <script src="../js/jquery.collapse.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("li.toggle-account a, .impatient").pageslide();
+            $("li.toggle-nav a, .impatient").pageslide();
+        });
+    </script>
+    <script>
+      new jQueryCollapse($(".showhide"), {
+        open: function() {
+          this.slideDown(150);
+        },
+        close: function() {
+          this.slideUp(150);
+        }
+      });
+    </script>
+    </body>
+</html>

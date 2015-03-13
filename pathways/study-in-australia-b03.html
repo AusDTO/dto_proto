@@ -11,13 +11,13 @@
   <body>
 
 	  <header>
-      <div class="container-header-background header-australia">
+      <div class="container-header-background header-immigration">
 	      <div class="container">
-				  <a href="../index.html"><img class="logo" src="../images/logo-australia.png" alt="Logo" /></a>
+				  <a href="../index.html"><img class="logo" src="../images/logo-immigration.png" alt="Logo" /></a>
 				  <ul class="persistent-controls">
 				  	<li class="toggle-search"><a href="#menu-search">Search</a></li>
 				  	<li class="toggle-nav"><a href="#menu-nav">Menu</a></li>
-				  	<li class="toggle-account toggle-authenticated"><a href="#menu-account">XXX</a></li>
+				  	<li class="toggle-account"><a href="#menu-account">Sign in</a></li>
 				  </ul>
 	    	</div><!-- container -->
     	</div><!-- container-header-background -->
@@ -112,38 +112,46 @@
     </footer>
 
     <section>
-	    <div id="menu-account">
-	      <h2>David Braithwaite</h2>
-	      <ul>
-	        <li><a href="">Choose what I share</a></li>
-	        <li><a href="">Update my details</a></li>
-	        <li><a href="">Link a service</a></li>
-	        <li><a href="">Sign out</a></li>
-	      </ul>
-	    </div><!-- menu-account -->
-	    <div id="menu-nav">
-	      <h2>Menu</h2>
-	      <ul>
-	        <li><a href="">Help</a></li>
-	        <li class="toggle-account"><a href="#menu-account">David Braithwaite</a></li>
-	      </ul>
-	      <h2>Other services</h2>
-	      <p><label for="sort">Sort by:</label>
-	      <select>
-	        <option selected="selected">Relevance</option>
-	        <option>A to Z</option>
-	        <option>Agencies only</option>
-	      </select>
-	      <ul>
-	        <li><a href="">Employment</a></li>
-	        <li><a href="">Education</a></li>
-	        <li><a href="">Medicare</a></li>
-	        <li><a href="">Centerlink</a></li>
-	        <li><a href="">Tax Office</a></li>
-	        <li><a href="">Health</a></li>
-	        <li><a href="">Show all 18...</a></li>
-	      </ul> 
-	    </div><!-- menu-nav -->
+			<div id="menu-account">
+				<h2 class="secure">Secure login</h2>
+				<div class="form-container">
+					<fieldset>
+					<div class="form-detail">
+					<label for="username">Username <span class="required">(required)</span></label><br />
+					<input class="float" type="text" value="" id="username" /> <span class="forgotten"><a href="">Forgotten username?</a></span>
+					</div>
+					<div class="form-detail">
+					<label for="password">Password <span class="required">(required)</span></label><br />
+					<input class="float" type="text" value="" id="password" /> <span class="forgotten"><a href="">Forgotten password?</a></span>
+					</div>
+					<p style="clear: both; margin-bottom: 0"><button>Sign in</button> &nbsp;<a href=""><strong>Or sign up</strong></a></p>
+					</fieldset>
+				</div>
+			  <p class="ico-speech-small"><a href="">Why sign up?</a></p>
+			</div><!-- menu-account -->
+			<div id="menu-nav">
+			  <h2>Menu</h2>
+			  <ul>
+			    <li><a href="">Help</a></li>
+			    <li><a href="">Personalise my experience</a></li>
+			  </ul>
+			  <h2>Other services</h2>
+			  <p><label for="sort">Sort by:</label>
+			  <select>
+			  	<option selected="selected">Relevance</option>
+			  	<option>A to Z</option>
+			  	<option>Agencies only</option>
+			  </select>
+			  <ul>
+			    <li><a href="">This could be</a></li>
+			    <li><a href="">A list of services</a></li>
+			    <li><a href="">Or agencies</a></li>
+			    <li><a href="">Or whatever else</a></li>
+			    <li><a href="">Makes sense for</a></li>
+			    <li><a href="">High profile IA exposure</a></li>
+			    <li><a href="">Show all 18...</a></li>
+			  </ul>	
+			</div><!-- menu-nav -->    	
     </section>
 
     <script src="../js/jquery.min.js"></script>

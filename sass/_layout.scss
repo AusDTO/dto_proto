@@ -73,15 +73,19 @@ body.home .glyphicon {
 .header-business {
     border-bottom: 5px solid $bg-business;
 }
-.header-business .logo {
-    max-width: 290px;
-}
 
 .header-human-services .logo {
     max-width: 386px;
 }
 .header-human-services {
     border-bottom: 5px solid $bg-human-services;
+}
+
+.header-immigration .logo {
+    max-width: 336px;
+}
+.header-immigration {
+    border-bottom: 5px solid $bg-immigration;
 }
 
 

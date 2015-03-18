@@ -208,7 +208,9 @@ img.responsive {
 
 /* Announcement is the message that appears above all content. */
 .announcement {
-	background-color: $message-background;
+  background-color: $message-bg;
+  color: $message-fg;
+  border-bottom: 2px solid $message-border;
 	padding: 0.1em 0 0.15em 0;
   margin-top: 5.5em;
 }
@@ -224,8 +226,9 @@ img.responsive {
   }
 }
 .announcement p {
+  background: $message-bg url(../images/ico-speech-message.png) no-repeat 0 10px;
 	font-size: 90%;
-	padding: 0.5em 0;
+	padding: 0.5em 0 0.5em 31px;
 	margin: 0;
 }
 

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DTO user pathway prototypes</title>
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+	  <header>
+      <div class="container-header-background header-australia">
+	      <div class="container">
+				  <a href="../index.html"><img class="logo" src="../images/logo-australia.png" alt="Logo" /></a>
+				  <ul class="persistent-controls">
+				  	<li class="toggle-search"><a href="#menu-search">Search</a></li>
+				  	<li class="toggle-nav"><a href="#menu-nav">Menu</a></li>
+				  	<li class="toggle-account"><a href="#menu-account">Sign in</a></li>
+				  </ul>
+	    	</div><!-- container -->
+    	</div><!-- container-header-background -->
+	  </header>
+
+    <div class="announcement">
+      <div class="container">
+      	<p><strong>README:</strong> Click "Sign in"</p>
+      </div><!-- container -->
+    </div><!-- announcement -->
+
+  	<div class="container">
+			<h1>Sign in</h1>
+			<div class="row">
+				
+				<div class="col-md-8">
+			    <section>
+			    	<h2>[Placeholder for signing in process]</h2>
+			    	<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="top: 3px"></span> <strong>These prototypes are not demonstrating the process for authentication</strong>.</p>
+			    	<p>Authentication may include various options for signing in, authorising prefill, and offering guidance for people who have not signed in before.</p>
+			      <p class="wireframe-note">[ Fiona enters her details ]</p>
+						<button class="button" onClick="location.href='losing-your-job-a04.html'">Sign in</button>
+			    </section>
+			   </div><!-- col -->
+			 </div><!-- row -->
+		</div><!-- container -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h2>Site information</h2>
+            <ul>
+              <li><a href="">Legal notices</a></li>
+              <li><a href="">Accessibility</a></li>
+              <li><a href="">Other languages</a></li>
+              <li><a href="">Glossary</a></li>
+              <li><a href="">Syndicate our site</a></li>
+              <li><a href="">Site map</a></li>
+            </ul>
+          </div><!-- col -->
+          <div class="col-md-3">
+            <h2>General information</h2>
+            <ul>
+              <li><a href="">About government</a></li>
+              <li><a href="">Freedom of information</a></li>
+              <li><a href="">Information publication</a></li>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">Live chat</a></li>
+              <li><a href="">Socal media</a></li>
+            </ul>
+          </div><!-- col -->
+          <div class="col-md-3">
+            <h2>Interact</h2>
+            <p>Twitter: @gov_au</p>
+            <h3>Site survey</h3>
+            <p>Please take a moment to <a href="">let us know how you feel</a> about this web site.</p>
+          </div><!-- col -->
+          <div class="col-md-3">
+            <h2>Social media</h2>
+            <img src="../images/sprite-social.png" alt="Social placeholder" />
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </footer>
+
+    <section>
+			<div id="menu-account">
+				<h2 class="secure">Secure login</h2>
+				<div class="form-container">
+					<fieldset>
+					<div class="form-detail">
+					<label for="username">Username <span class="required">(required)</span></label><br />
+					<input class="float" type="text" value="" id="username" /> <span class="forgotten"><a href="">Forgotten username?</a></span>
+					</div>
+					<div class="form-detail">
+					<label for="password">Password <span class="required">(required)</span></label><br />
+					<input class="float" type="text" value="" id="password" /> <span class="forgotten"><a href="">Forgotten password?</a></span>
+					</div>
+					<p style="clear: both; margin-bottom: 0"><button>Sign in</button> &nbsp;<a href=""><strong>Or sign up</strong></a></p>
+					</fieldset>
+				</div>
+			  <p class="ico-speech-small"><a href="">Why sign up?</a></p>
+			</div><!-- menu-account -->
+			<div id="menu-nav">
+			  <h2>Menu</h2>
+			  <ul>
+			    <li><a href="">Help</a></li>
+			    <li><a href="">Personalise my experience</a></li>
+			  </ul>
+			  <h2>Other services</h2>
+			  <p><label for="sort">Sort by:</label>
+			  <select>
+			  	<option selected="selected">Relevance</option>
+			  	<option>A to Z</option>
+			  	<option>Agencies only</option>
+			  </select>
+			  <ul>
+			    <li><a href="">This could be</a></li>
+			    <li><a href="">A list of services</a></li>
+			    <li><a href="">Or agencies</a></li>
+			    <li><a href="">Or whatever else</a></li>
+			    <li><a href="">Makes sense for</a></li>
+			    <li><a href="">High profile IA exposure</a></li>
+			    <li><a href="">Show all 18...</a></li>
+			  </ul>	
+			</div><!-- menu-nav -->    	
+    </section>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+	  <script src="../js/jquery.pageslide.js"></script>
+ 	  <script src="../js/jquery.collapse.js"></script>
+	  <script>
+	      $(document).ready(function() {
+	          $("li.toggle-account a, .impatient").pageslide();
+	          $("li.toggle-nav a, .impatient").pageslide();
+	      });
+	  </script>
+	  <script>
+	    new jQueryCollapse($(".showhide"), {
+	      open: function() {
+	        this.slideDown(150);
+	      },
+	      close: function() {
+	        this.slideUp(150);
+	      }
+	    });
+	  </script>
+    </body>
+</html>
